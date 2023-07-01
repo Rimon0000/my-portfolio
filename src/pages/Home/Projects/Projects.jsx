@@ -16,7 +16,7 @@ const Projects = () => {
               </TabList>
           
               <TabPanel>
-                <h2>Any content 1</h2>
+                <ReactProjects></ReactProjects>
               </TabPanel>
               <TabPanel>
                 <ReactProjects></ReactProjects>
