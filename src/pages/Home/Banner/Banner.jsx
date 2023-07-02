@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Banner = () => {
 
     return (
-        <div className='flex justify-between gap-5 mt-5 pt-5'>
+        <div className='lg:flex justify-between gap-5 mt-5 pt-5'>
             <div>
                 <h2 className='text-4xl font-semibold text-blue-500	'>Hi everyone, I'm </h2>
                 <h1 className='text-4xl font-semibold mt-2'>Rimon Ron</h1>

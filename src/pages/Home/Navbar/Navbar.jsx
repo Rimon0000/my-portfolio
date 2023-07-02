@@ -20,22 +20,24 @@ const Navbar = () => {
     }
   }
 
+  const handleMenuItemClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const navOptions = (
     <>
       <li>
         <Link className="font-semibold" to='/'>Home</Link>
       </li>
       <li>
-        <Link className="font-semibold" to='/instructors'>About</Link>
+      <Link onClick={() => handleMenuItemClick('skills')} className="font-semibold" to='#Skills'>Skills</Link>
       </li>
       <li>
-        <Link className="font-semibold" to='/classes'>Skills</Link>
+        <Link onClick={() => handleMenuItemClick('projects')} className="font-semibold" to='#Projects'>Projects</Link>
       </li>
       <li>
-        <Link className="font-semibold" to='/classes'>Projects</Link>
-      </li>
-      <li>
-        <Link className="font-semibold" to='/classes'>Contact</Link>
+        <Link onClick={() => handleMenuItemClick('contact')} className="font-semibold" to='#Contact'>Contact</Link>
       </li>
     </>
   );  

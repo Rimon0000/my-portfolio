@@ -5,8 +5,7 @@ import FadeIn from 'react-fade-in';
 const Contact = () => {
     return (
         <FadeIn>
-          
-            <div className='my-10 bg-base-200 rounded-lg'>
+            <div className='my-10 bg-base-200 rounded-lg' id='contact'>
             <h2 className='text-center text-4xl font-bold mt-5 pt-5'>Contact Me</h2>
             <p className='text-center font-semibold border-b-4 border-gray-500 w-1/2 mx-auto mt-4'>Let's work together</p>
             <div className='grid lg:grid-cols-2 gap-5'>

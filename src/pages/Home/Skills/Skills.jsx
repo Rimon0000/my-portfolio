@@ -3,7 +3,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 const Skills = () => {
     return (
-        <div>
+        <div id='skills'>
             <h2 className='text-center text-4xl font-bold m-5 p-5 border-b-4 border-gray-500 w-1/2 mx-auto'>My Skills</h2>
             <div className='grid lg:grid-cols-2 gap-5 mt-5'>
                 <div>
