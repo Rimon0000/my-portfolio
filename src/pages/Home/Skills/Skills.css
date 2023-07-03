@@ -1,0 +1,14 @@
+.progress {
+    height: 100%;
+    animation: progress-animation 5s ease-in-out forwards;
+  }
+  
+  @keyframes progress-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
