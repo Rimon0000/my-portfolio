@@ -1,18 +1,19 @@
 import React from 'react';
-import react1 from "../../../assets/projects ss/react1.png"
-import react2 from "../../../assets/projects ss/react2.png"
-import react3 from "../../../assets/projects ss/react3.png"
-import react4 from "../../../assets/projects ss/react4.png"
-import react5 from "../../../assets/projects ss/react5.png"
-import react6 from "../../../assets/projects ss/react6.png"
+import react1 from "../../../assets/projects-ss/react1.png"
+import react2 from "../../../assets/projects-ss/react2.png"
+import react3 from "../../../assets/projects-ss/react3.png"
+import react4 from "../../../assets/projects-ss/react4.png"
+import react5 from "../../../assets/projects-ss/react5.png"
+import react6 from "../../../assets/projects-ss/react6.png"
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
+
 
 const ReactProjects = () => {
     return (
         <div className='grid lg:grid-cols-3 gap-10'>
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
-              <figure><img src={react1} alt="Shoes" /></figure>
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
+              <figure><img src={react1} alt="" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Summer Camp School</h2>
                 <div className='flex justify-between'>
@@ -47,7 +48,7 @@ const ReactProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={react2} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Toy Store</h2>
@@ -81,7 +82,7 @@ const ReactProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={react3} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Chef Recipe Hunter</h2>
@@ -114,7 +115,7 @@ const ReactProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={react4} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Career Hub</h2>
@@ -147,7 +148,7 @@ const ReactProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={react5} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Blog Site</h2>
@@ -179,7 +180,7 @@ const ReactProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px]">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px]" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={react6} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Bistro Boss</h2>

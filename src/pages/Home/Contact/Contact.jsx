@@ -1,6 +1,5 @@
 import React from 'react';
 import {FaMailBulk, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
-import FadeIn from 'react-fade-in';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
@@ -16,8 +15,7 @@ const Contact = () => {
   }
 
     return (
-        <FadeIn>
-            <div className='my-10 bg-base-200 rounded-lg pb-5' id='contact'>
+          <div className='my-10 bg-base-200 rounded-lg pb-5' id='contact' data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
             <h2 className='text-center text-4xl font-bold mt-5 pt-5'>Contact Me</h2>
             <p className='text-center font-semibold border-b-4 border-gray-500 w-1/2 mx-auto mt-4'>Let's work together</p>
             <div className='grid lg:grid-cols-2 gap-5'>
@@ -62,7 +60,6 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        </FadeIn>
     );
 };
 

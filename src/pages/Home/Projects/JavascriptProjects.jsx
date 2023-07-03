@@ -1,6 +1,6 @@
 import React from 'react';
-import javascript1 from "../../../assets/projects ss/javascript1.png"
-import javascript2 from "../../../assets/projects ss/javascript2.png"
+import javascript1 from "../../../assets/projects-ss/javascript1.png"
+import javascript2 from "../../../assets/projects-ss/javascript2.png"
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 
 
@@ -8,7 +8,7 @@ const JavascriptProjects = () => {
     return (
         <div className='grid lg:grid-cols-3 gap-10'>
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px] mt-10">
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px] mt-10" data-aos="zoom-in-left" data-aos-duration="2000">
               <figure><img src={javascript1} alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">AI Universe Hub</h2>
@@ -41,8 +41,8 @@ const JavascriptProjects = () => {
             </div>
 
             <div>
-            <div className="card w-96 bg-base-100 shadow-xl h-[360px] mt-10">
-              <figure><img src={javascript2} alt="Geometry Genius" /></figure>
+            <div className="card w-96 bg-base-100 shadow-xl h-[360px] mt-10" data-aos="zoom-in-left" data-aos-duration="2000">
+              <figure className='javascript1'><img src={javascript2} alt="Geometry Genius" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Geometry Genius</h2>
                 <div className='flex justify-between'>
