@@ -7,10 +7,10 @@ const Banner = () => {
 
     return (
         <div className='lg:flex justify-between gap-5 mt-5 pt-5'>
-            <div>
+            <div className='mt-5'>
                 <h2 className='text-4xl font-semibold text-blue-500	'>Hi everyone, I'm </h2>
-                <h1 className='text-4xl font-semibold mt-2'>Rimon Ron</h1>
-                <div className='flex gap-3 text-4xl mt-2'>
+                <h1 className='text-4xl font-bold mt-2'>Rimon Ron</h1>
+                <div className='flex gap-3 text-3xl mt-2'>
                 <h3 className='font-semibold'>A passionate</h3>
                 <span style={{ color: 'blue', fontWeight: 'bold' }}>
                 <Typewriter
@@ -30,10 +30,6 @@ const Banner = () => {
                 <a href="https://github.com/Rimon0000"><FaGithub className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaGithub></a>
                 <a href="https://www.linkedin.com/in/rimon-uddin-79b858238/"><FaLinkedinIn className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaLinkedinIn></a>
                 <a href="mailTo:rimonron.ad@gmail.com"><FaMailBulk className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaMailBulk></a>
-                </div>
-                <div className='mt-5'>
-                <a className="btn btn-outline btn-primary mr-3" href="https://drive.google.com/uc?id=1WEuRNXpFmOjjsQfMcUdUlXtl5jbkQWmv&export=download"download>Resume</a>
-                <a className="btn btn-outline btn-primary mr-3" href="">Contact Me</a>
                 </div>
             </div>
             <div className="avatar">
