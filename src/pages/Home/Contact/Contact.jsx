@@ -41,8 +41,8 @@ const Contact = () => {
                 </div>
                 <input className='btn btn-primary mt-3 text-white' type="submit" value="Send Message" />
                 </form>
-
                 </div>
+                
                 <div>
                     <h2 className='text-center text-2xl font-semibold m-5 p-5 border-b-2 border-gray-500 w-1/2 mx-auto'>Contact Info</h2>
                     <div className='flex items-center justify-center gap-3 text-center ml-10 pt-5 font-semibold text-2xl'>

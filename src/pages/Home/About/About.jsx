@@ -27,6 +27,7 @@ const About = () => {
                 <div className='mt-5'>
                 <a className="btn btn-outline btn-primary mr-3" href="https://drive.google.com/uc?id=1WEuRNXpFmOjjsQfMcUdUlXtl5jbkQWmv&export=download"download>Resume</a>
                 </div>
+                
             </div>
            </div>
 
