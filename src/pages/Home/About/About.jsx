@@ -25,7 +25,7 @@ const About = () => {
                 and troubleshooting and debugging to optimize performance.</p>
                 <p className='mt-4 font-bold'>Email: <span>rimonron.ad@gmail.com</span></p>
                 <div className='mt-5'>
-                <a className="btn btn-outline btn-primary mr-3" href="https://drive.google.com/uc?id=1WEuRNXpFmOjjsQfMcUdUlXtl5jbkQWmv&export=download"download>Resume</a>
+                <a className="btn btn-outline btn-primary mr-3" href="https://drive.google.com/uc?id=1II0-6LZC0nkZdNBaCS6KgbHaKtEPVHPX&export=download"download>Resume</a>
                 </div>
                 
             </div>
