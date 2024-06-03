@@ -2,8 +2,8 @@ import React from 'react';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 
 
-const JavascriptProjects = ({item}) => {
-    const {image, title, live, client,server, description, technology, features } = item
+const ProjectCard = ({item}) => {
+    const {_id, image, title, live, client,server, description, technology, features } = item
     const featuresArray = features.split('.').filter(feature => feature.trim() !== '');
 
     return (
@@ -19,16 +19,16 @@ const JavascriptProjects = ({item}) => {
                 <a className="tooltip tooltip-bottom" data-tip="Github Server" href={client} target="_blank"><FaLink></FaLink></a>
                 </div>
                 <div>
-                <button className="btn btn-secondary btn-outline" onClick={()=>window.my_modal_6.showModal()}>Details</button>
+                <button className="btn btn-secondary btn-outline" onClick={()=>document.getElementById(_id).showModal()}>Details</button>
                 </div>
               </div>
             </div>
           </div>
           {/* Open the modal using ID.showModal() method */}
-          <dialog id="my_modal_6" className="modal modal-bottom sm:modal-middle">
+          <dialog id={_id} className="modal modal-bottom sm:modal-middle">
             <form method="dialog" className="modal-box">
               <h3 className="font-bold text-lg">Project Name: {title}</h3>
-              <p className="py-4">{description}</p>
+              <p className="py-4 text-justify">{description}</p>
               {/* <p className="py-4 font-semibold">Technology: </p>
                 <li>{technology}</li> */}
               <p className="py-4 font-semibold">features: </p>
@@ -48,4 +48,4 @@ const JavascriptProjects = ({item}) => {
     );
 };
 
-export default JavascriptProjects;
+export default ProjectCard;

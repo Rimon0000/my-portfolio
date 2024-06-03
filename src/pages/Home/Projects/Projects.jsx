@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import ReactProjects from './ReactProjects';
-import JavascriptProjects from './JavascriptProjects';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
+import ProjectCard from './ProjectCard';
 
 
 
@@ -17,11 +16,11 @@ const Projects = () => {
     
 
     return (
-        <div id='projects'>
-            <h2 className='text-center text-4xl font-bold mt-10 p-5 border-b-4 border-gray-500 w-1/2 mx-auto'>My Projects</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 px-10'>
+        <div id='projects' className='w-[90%] mx-auto mt-20'>
+            <h2 className='text-center text-4xl font-bold mt-10 p-5 border-b-4 border-gray-500 w-7/12 mx-auto'>My Projects</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
               {
-                data?.data?.map((item) => <JavascriptProjects key={item._id} item={item}/>)
+                data?.data?.map((item) => <ProjectCard key={item._id} item={item}/>)
               }
             </div>
         </div>
