@@ -37,14 +37,17 @@ const Navbar = () => {
         <Link onClick={() => handleMenuItemClick('projects')} className="font-semibold" to='#Projects'>Projects</Link>
       </li>
       <li>
+        <Link onClick={() => handleMenuItemClick('blog')} className="font-semibold" to='#Blog'>Blog</Link>
+      </li>
+      <li>
         <Link onClick={() => handleMenuItemClick('contact')} className="font-semibold" to='#Contact'>Contact</Link>
       </li>
     </>
   );  
 
   return (
-    <>
-      <div className="navbar bg-opacity-30 bg-black lg:text-white max-w-screen-xl">
+    <div className="bg-black lg:text-white bg-opacity-30 flex place-content-center">
+      <div className="navbar w-[90%] mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -79,7 +82,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
