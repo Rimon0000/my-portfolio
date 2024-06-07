@@ -15,8 +15,8 @@ const ProjectCard = ({item}) => {
               <div className='flex justify-between'>
                 <div className='grid grid-cols-3 gap-5 text-3xl mt-4'>
                 <a className="tooltip tooltip-bottom" data-tip="Live Site" href={live} target="_blank"><FaExternalLinkAlt></FaExternalLinkAlt></a>
-                <a className="tooltip tooltip-bottom" data-tip="Github Client" href={server} target="_blank"><FaGithub></FaGithub></a>
-                <a className="tooltip tooltip-bottom" data-tip="Github Server" href={client} target="_blank"><FaLink></FaLink></a>
+                <a className="tooltip tooltip-bottom" data-tip="Github Client" href={client} target="_blank"><FaGithub></FaGithub></a>
+                <a className="tooltip tooltip-bottom" data-tip="Github Server" href={server} target="_blank"><FaLink></FaLink></a>
                 </div>
                 <div>
                 <button className="btn btn-secondary btn-outline" onClick={()=>document.getElementById(_id).showModal()}>Details</button>

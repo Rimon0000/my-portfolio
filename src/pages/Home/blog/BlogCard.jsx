@@ -27,9 +27,21 @@ const BlogCard = ({item}) => {
                     <FaCalendarAlt />
                     <p className=" text-slate-500">{moment(new Date(`${date}`)).format('DD MMMM YYYY')}</p>
                     </div>
-                <button className="btn btn-sm btn-outline btn-primary">Details</button>
+                <button className="btn btn-sm btn-outline btn-primary" onClick={()=>document.getElementById(_id).showModal()}>Read More</button>
             </div>
           </div>
+
+          {/* Open the modal using ID.showModal() method */}
+          <dialog id={_id} className="modal modal-bottom sm:modal-middle">
+            <form method="dialog" className="modal-box">
+              <h3 className="font-semibold text-lg">{title}</h3>
+              <p className="py-4 text-justify">{description}</p>
+              <div className="modal-action">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn">Close</button>
+              </div>
+            </form>
+          </dialog>
         </div>
     );
 };
