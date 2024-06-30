@@ -8,18 +8,20 @@ const ProjectCard = ({item}) => {
 
     return (
         <div className=''>
-          <div className="card bg-base-100 shadow-xl " data-aos="zoom-in-left" data-aos-duration="2000">
+          <div className="card bg-base-100 shadow-xl  " data-aos="zoom-in-left" data-aos-duration="2000">
             <figure><img className='h-[200px]' src={image} alt="Image" /></figure>
             <div className="card-body">
               <h2 className="card-title">{title}</h2>
-              <div className='flex justify-between'>
-                <div className='grid grid-cols-3 gap-5 text-3xl mt-4'>
+              <p className='text-justify'>{description}</p>
+              <hr />
+              <div className='flex justify-between mt-4'>
+                <div className='grid grid-cols-3 gap-5 text-3xl'>
                 <a className="tooltip tooltip-bottom" data-tip="Live Site" href={live} target="_blank"><FaExternalLinkAlt></FaExternalLinkAlt></a>
                 <a className="tooltip tooltip-bottom" data-tip="Github Client" href={client} target="_blank"><FaGithub></FaGithub></a>
                 <a className="tooltip tooltip-bottom" data-tip="Github Server" href={server} target="_blank"><FaLink></FaLink></a>
                 </div>
                 <div>
-                <button className="btn btn-secondary btn-outline" onClick={()=>document.getElementById(_id).showModal()}>Details</button>
+                <button className="btn btn-secondary btn-sm btn-outline" onClick={()=>document.getElementById(_id).showModal()}>Details</button>
                 </div>
               </div>
             </div>

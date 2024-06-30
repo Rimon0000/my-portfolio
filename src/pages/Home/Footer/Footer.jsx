@@ -26,7 +26,7 @@ const Footer = () => {
 
   
     return (
-        <div className='bg-base-200 rounded-lg'>
+        <div className='bg-black bg-opacity-80 lg:text-white'>
             <div className="footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-10">
                <div>
                 <h2 className='font-semibold text-3xl'>Rimon Ron</h2>
@@ -36,15 +36,15 @@ const Footer = () => {
                <div>
                  <span className="footer-title text-2xl">Social</span> 
                  <div className="grid grid-flow-col gap-5">
-                <a href="https://github.com/Rimon0000"><FaGithub className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaGithub></a>
-                <a href="https://www.linkedin.com/in/rimon-uddin-79b858238/"><FaLinkedinIn className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaLinkedinIn></a>
-                <a href="mailTo:rimonron.ad@gmail.com"><FaMailBulk className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaMailBulk></a>
+                <a href="https://github.com/Rimon0000"><FaGithub className='h-[43px] w-[43px] bg-slate-600 rounded-full p-1'></FaGithub></a>
+                <a href="https://www.linkedin.com/in/rimon-uddin-79b858238/"><FaLinkedinIn className='h-[43px] w-[43px] bg-slate-600 rounded-full p-1'></FaLinkedinIn></a>
+                <a href="mailTo:rimonron.ad@gmail.com"><FaMailBulk className='h-[43px] w-[43px] bg-slate-600 rounded-full p-1'></FaMailBulk></a>
                  </div>
                </div>
 
-               <div className="navbar-center mt-5 md:flex lg:flex">
-                 <ul className="menu menu-horizontal px-1">
-                   {navOptions}
+               <div>
+                 <ul>
+                   <li>{navOptions}</li>
                  </ul>
                </div>
             </div>

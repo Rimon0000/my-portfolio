@@ -20,7 +20,7 @@ const BlogCard = ({item}) => {
           <p className="absolute text-tiny top-3 right-3 z-50 bg-white rounded-lg p-1 font-semibold">{category}</p>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>
-            <p className=''>{truncatedDescription}</p>
+            <p className='text-justify'>{truncatedDescription}</p>
             <hr />
             <div className="card-actions justify-between mt-2">
                    <div className="flex gap-3 items-center text-base font-semibold">

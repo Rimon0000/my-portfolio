@@ -100,17 +100,19 @@ const Contact = () => {
           <h2 className="text-center text-2xl font-semibold m-5 p-5 border-b-2 border-gray-500 w-1/2 mx-auto">
             Contact Info
           </h2>
-          <div className="flex items-center justify-center gap-3 text-center ml-10 pt-5 font-semibold text-2xl">
+          <div className="font-semibold text-2xl text-center lg:ml-20">
+          <div className="flex gap-3 pt-5">
             <FaMailBulk></FaMailBulk>
             <p>rimonron.ad@gmail.com</p>
           </div>
-          <div className="flex items-center justify-center gap-3 text-center pt-5 font-semibold text-2xl">
+          <div className="flex gap-3 text-center pt-5">
             <FaPhoneAlt></FaPhoneAlt>
             <p>+880 1306-260913</p>
           </div>
-          <div className="flex items-center justify-center gap-3 text-center pt-5 font-semibold text-2xl">
+          <div className="flex  gap-3 text-center pt-5 ">
             <FaMapMarkerAlt></FaMapMarkerAlt>
             <p>Noakhali, Bangladesh</p>
+          </div>
           </div>
         </div>
       </div>

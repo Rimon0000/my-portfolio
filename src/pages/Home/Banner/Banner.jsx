@@ -57,7 +57,6 @@ const Banner = () => {
                 />
                 </motion.span>
                 </div>
-                {/* <motion.p variants={introChildren} className='text-3xl font-semibold mt-2 max-w-[50ch]'>Having an experience of building Modern Web Applications with some cool Libraries and Frameworks.</motion.p> */}
 
                 <div className='flex gap-6 mt-10'>
                 <a href="https://github.com/Rimon0000"><FaGithub className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaGithub></a>
