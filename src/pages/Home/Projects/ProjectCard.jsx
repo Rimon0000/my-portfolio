@@ -8,7 +8,7 @@ const ProjectCard = ({item}) => {
 
     return (
         <div className=''>
-          <div className="card bg-base-100 shadow-xl  " data-aos="zoom-in-left" data-aos-duration="2000">
+          <div className="card bg-base-100 shadow-xl  border hover:border-blue-500 transition-all duration-300" data-aos="zoom-in-left" data-aos-duration="2000">
             <figure><img className='h-[200px]' src={image} alt="Image" /></figure>
             <div className="card-body">
               <h2 className="card-title">{title}</h2>
@@ -16,12 +16,21 @@ const ProjectCard = ({item}) => {
               <hr />
               <div className='flex justify-between mt-4'>
                 <div className='grid grid-cols-3 gap-5 text-3xl'>
-                <a className="tooltip tooltip-bottom" data-tip="Live Site" href={live} target="_blank"><FaExternalLinkAlt></FaExternalLinkAlt></a>
-                <a className="tooltip tooltip-bottom" data-tip="Github Client" href={client} target="_blank"><FaGithub></FaGithub></a>
-                <a className="tooltip tooltip-bottom" data-tip="Github Server" href={server} target="_blank"><FaLink></FaLink></a>
+                    <a className="tooltip tooltip-bottom" data-tip="Live Site" href={live} target="_blank">
+                        <button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                        <FaExternalLinkAlt className='h-[40px] w-[40px] rounded-full p-2'></FaExternalLinkAlt></button>
+                    </a>
+                    <a className="tooltip tooltip-bottom" data-tip="Github Client" href={client} target="_blank">
+                      <button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                      <FaGithub className='h-[40px] w-[40px] rounded-full p-2'></FaGithub></button>
+                    </a>
+                    <a className="tooltip tooltip-bottom" data-tip="Github Server" href={server} target="_blank">
+                      <button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                      <FaLink className='h-[40px] w-[40px] rounded-full p-2'></FaLink></button>
+                    </a>
                 </div>
                 <div>
-                <button className="btn btn-secondary btn-sm btn-outline" onClick={()=>document.getElementById(_id).showModal()}>Details</button>
+                <button className="btn btn-secondary btn-outline btn-sm rounded-3xl py-4 text-center place-content-center" onClick={()=>document.getElementById(_id).showModal()}>Details</button>
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ const Skills = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-5">
         {data?.data?.map((item) => (
-          <div className="card bg-base-200 shadow-xl px-5 pt-1 pb-2 border hover:border-blue-500 transition-all duration-400 hover:rounded-md ">
+          <div className="card bg-base-200 shadow-xl px-5 pt-1 pb-2 border hover:border-blue-500 transition-all duration-400 hover:rounded-md">
             <figure className="text-center">
               <img
                 src={item.icon}

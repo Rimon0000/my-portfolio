@@ -39,19 +39,19 @@ const Contact = () => {
 
   return (
     <div
-      className="my-20 w-[90%] mx-auto bg-base-200 rounded-lg pb-5"
+      className="my-20 w-[90%] mx-auto  rounded-lg pb-5"
       id="contact"
       data-aos="fade-up"
       data-aos-duration="2000"
       data-aos-easing="ease-out-cubic"
     >
-      <h2 className="text-center text-4xl font-bold mt-5 pt-5">Contact Me</h2>
+      <h2 className="text-center text-4xl font-bold pt-5">Contact Me</h2>
       <p className="text-center font-semibold border-b-4 border-gray-500 w-1/2 mx-auto mt-4">
         Let's work together
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-10">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-10 mt-10">
+        <div className="bg-base-200 py-5 px-8 rounded-lg border hover:border-blue-500 transition-all duration-300">
           <form onSubmit={handleContact}>
             <div className="form-control">
               <label className="label">
@@ -88,8 +88,8 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <div className="pb-3 mt-3">
-              <button className="btn btn-outline btn-primary" type="submit">
+            <div className="pb-3 mt-5">
+              <button className="btn btn-outline btn-primary rounded-3xl" type="submit">
                 Contact
               </button>
             </div>
@@ -101,16 +101,19 @@ const Contact = () => {
             Contact Info
           </h2>
           <div className="font-semibold text-2xl text-center lg:ml-20">
-          <div className="flex gap-3 pt-5">
-            <FaMailBulk></FaMailBulk>
+          <div className="flex gap-3 pt-5 bg-base-200 py-5 px-8 rounded-lg border hover:border-blue-500 transition-all hover:animate-pulse hover:shadow-primary hover:shadow-md duration-300">
+             <button className='border border-blue-500 rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-blue-800 hover:text-white'>
+             <FaMailBulk className='h-[35px] w-[35px] rounded-full p-2'></FaMailBulk></button>
             <p>rimonron.ad@gmail.com</p>
           </div>
-          <div className="flex gap-3 text-center pt-5">
-            <FaPhoneAlt></FaPhoneAlt>
+          <div className="flex gap-3 my-4 text-center pt-5 bg-base-200 py-5 px-8 rounded-lg border hover:border-blue-500 transition-all hover:animate-pulse hover:shadow-primary hover:shadow-md duration-300">
+            <button className='border border-blue-500 rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-blue-800 hover:text-white'>
+            <FaPhoneAlt className='h-[35px] w-[35px] rounded-full p-2'></FaPhoneAlt></button>
             <p>+880 1306-260913</p>
           </div>
-          <div className="flex  gap-3 text-center pt-5 ">
-            <FaMapMarkerAlt></FaMapMarkerAlt>
+          <div className="flex  gap-3 text-center pt-5 bg-base-200 py-5 px-8 rounded-lg border hover:border-blue-500 transition-all hover:animate-pulse hover:shadow-primary hover:shadow-md duration-300">
+            <button className='border border-blue-500 rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-blue-800 hover:text-white'>
+            <FaMapMarkerAlt className='h-[35px] w-[35px] rounded-full p-2'></FaMapMarkerAlt></button>
             <p>Noakhali, Bangladesh</p>
           </div>
           </div>

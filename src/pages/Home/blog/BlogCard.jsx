@@ -15,19 +15,20 @@ const BlogCard = ({item}) => {
     const truncatedDescription = truncateText(description, 300);
 
     return (
-        <div className="relative card card-compact bg-base-100 shadow-xl">
+        <div className="relative card card-compact bg-base-100 shadow-2xl border hover:border-blue-500 transition-all duration-300">
           <figure><img src={image} alt="Shoes" /></figure>
           <p className="absolute text-tiny top-3 right-3 z-50 bg-white rounded-lg p-1 font-semibold">{category}</p>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>
             <p className='text-justify'>{truncatedDescription}</p>
             <hr />
-            <div className="card-actions justify-between mt-2">
+            <div className="card-actions justify-between items-center mt-2">
                    <div className="flex gap-3 items-center text-base font-semibold">
-                    <FaCalendarAlt />
+                   <button className='border border-blue-500 rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-blue-800 hover:text-white'>
+                   <FaCalendarAlt className='h-[35px] w-[35px] rounded-full p-2'></FaCalendarAlt></button>
                     <p className=" text-slate-500">{moment(new Date(`${date}`)).format('DD MMMM YYYY')}</p>
                     </div>
-                <button className="btn btn-sm btn-outline btn-primary" onClick={()=>document.getElementById(_id).showModal()}>Read More</button>
+                <button className="btn btn-sm btn-outline btn-primary rounded-3xl" onClick={()=>document.getElementById(_id).showModal()}>Read More</button>
             </div>
           </div>
 

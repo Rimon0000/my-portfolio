@@ -9,7 +9,7 @@ import Blog from '../blog/Blog';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Banner></Banner>
             <About></About>
             <Skills></Skills>

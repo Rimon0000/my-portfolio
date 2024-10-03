@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserAlt, FaUserGraduate } from 'react-icons/fa';
+import { FaCloudDownloadAlt, FaUserAlt, FaUserGraduate } from 'react-icons/fa';
 import about from "../../../assets/rimon-about.jpeg"
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
                     experience in developing responsive and interactive user interfaces. 
                     My skills include translating design mockups into high-quality code, 
                     implementing user authentication and authorization features, 
-                and troubleshooting and debugging to optimize performance.</p>
+                    and troubleshooting and debugging to optimize performance.</p>
                 <div className='flex items-center gap-3 mt-5'>
                     <img className='w-[45px] h-[45px]' src="https://i.ibb.co/X8NkhDT/icon.png" alt="" />
                     <h2 className='text-3xl font-semibold'>Education</h2>
@@ -37,7 +37,9 @@ const About = () => {
                 </div>
 
                 <div className='mt-5'>
-                <a className="btn btn-outline btn-primary mr-3" href="https://drive.google.com/uc?id=1II0-6LZC0nkZdNBaCS6KgbHaKtEPVHPX&export=download"download>Resume</a>
+                <a className="btn btn-outline rounded-3xl mr-3" href="https://drive.google.com/uc?id=1II0-6LZC0nkZdNBaCS6KgbHaKtEPVHPX&export=download"download>Resume
+                <FaCloudDownloadAlt className='w-[20px] h-[20px]'></FaCloudDownloadAlt>
+                </a>
                 </div>
                 
             </div>

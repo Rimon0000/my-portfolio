@@ -3,7 +3,7 @@ import rimon from "../../../assets/rimon.jpeg"
 import {FaGithub, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter'
 import {motion} from "framer-motion"
-import Bannerr from "./Banner.css"
+import "./Banner.css"
 
 
 
@@ -59,9 +59,16 @@ const Banner = () => {
                 </div>
 
                 <div className='flex gap-6 mt-10'>
-                <a href="https://github.com/Rimon0000"><FaGithub className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaGithub></a>
-                <a href="https://www.linkedin.com/in/rimon-uddin-79b858238/"><FaLinkedinIn className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaLinkedinIn></a>
-                <a href="mailTo:rimonron.ad@gmail.com"><FaMailBulk className='h-[43px] w-[43px] bg-slate-200 rounded-full p-1'></FaMailBulk></a>
+                    <a href="https://github.com/Rimon0000"><button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                    <FaGithub className='h-[43px] w-[43px] rounded-full p-2'></FaGithub></button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rimon-uddin-79b858238/"><button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                    <FaLinkedinIn className='h-[43px] w-[43px] rounded-full p-2'></FaLinkedinIn></button>
+                    </a>
+                    <a href="mailTo:rimonron.ad@gmail.com"><button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
+                    <FaMailBulk className='h-[43px] w-[43px] rounded-full p-2'></FaMailBulk></button>
+                    </a>
                 </div>
             </motion.div>
 
