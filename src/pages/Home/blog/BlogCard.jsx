@@ -15,11 +15,11 @@ const BlogCard = ({item}) => {
     const truncatedDescription = truncateText(description, 300);
 
     return (
-        <div className="relative card card-compact bg-base-100 shadow-2xl border hover:border-blue-500 transition-all duration-300">
+        <div className="relative card card-compact bg-base-100 shadow-2xl border hover:border-blue-500 transition-all duration-300" data-aos="zoom-in-left" data-aos-duration="2000">
           <figure><img src={image} alt="Shoes" /></figure>
           <p className="absolute text-tiny top-3 right-3 z-50 bg-white rounded-lg p-1 font-semibold">{category}</p>
           <div className="card-body">
-            <h2 className="card-title">{title}</h2>
+            <h2 className="card-title font-mono text-xl">{title}</h2>
             <p className='text-justify'>{truncatedDescription}</p>
             <hr />
             <div className="card-actions justify-between items-center mt-2">
@@ -36,7 +36,7 @@ const BlogCard = ({item}) => {
           <dialog id={_id} className="modal modal-bottom sm:modal-middle">
             <form method="dialog" className="modal-box">
               <h3 className="font-semibold text-lg">{title}</h3>
-              <p className="py-4 text-justify">{description}</p>
+              <p className="py-4 text-justify font-light text-base">{description}</p>
               <div className="modal-action">
                 {/* if there is a button in form, it will close the modal */}
                 <button className="btn">Close</button>

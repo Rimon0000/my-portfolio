@@ -5,7 +5,7 @@ import about from "../../../assets/rimon-about.jpeg"
 const About = () => {
     return (
         <div className='w-[90%] mx-auto'>
-            <h2 className='flex gap-5 text-center text-4xl font-bold mt-10 p-5 border-b-4 border-gray-500 justify-center mx-auto w-7/12' ><FaUserAlt></FaUserAlt> About <span className='text-blue-500'>Me</span></h2>
+            <h2 className='flex gap-5 text-center text-4xl font-bold p-5 border-b-4 border-gray-500 justify-center mx-auto w-7/12' ><FaUserAlt></FaUserAlt> About <span className='text-blue-500'>Me</span></h2>
            <div className='lg:flex md:flex gap-5 mt-20'>
             <div className='lg:w-1/2 md:w-1/2' data-aos="fade-right" data-aos-duration="2000">
             <div className="avatar">

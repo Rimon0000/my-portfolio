@@ -40,7 +40,7 @@ const Banner = () => {
 
     return (
         <div className='lg:flex justify-between mt-5 pt-5 mb-28 w-[90%] px-10 mx-auto'>
-            <motion.div className='my-5 lg:w-[50%] px-2 banner' variants={intro} initial="hidden" animate="visible">
+            <motion.div className='my-5 lg:w-[50%] px-2 banner lg:pt-10 md:pt-10 sm:pt-1' variants={intro} initial="hidden" animate="visible">
                 <motion.h2 variants={introChildren} className='text-6xl font-bold'>Hi, I am </motion.h2>
                 <motion.h1 variants={introChildren} className='text-6xl font-bold my-5'>Rimon Uddin</motion.h1>
                 <div className='flex gap-3 text-3xl'>

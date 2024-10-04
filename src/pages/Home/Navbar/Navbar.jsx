@@ -12,6 +12,7 @@ const Navbar = () => {
     document.querySelector("html").setAttribute("data-theme", localTheme)
   }, [theme])
 
+  //for theme
   const handleToggle = (e) =>{
     if(e.target.checked){
       setTheme("dark")
@@ -21,6 +22,7 @@ const Navbar = () => {
     }
   }
 
+  //for scroll
   const handleMenuItemClick = (sectionId) => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
@@ -47,8 +49,8 @@ const Navbar = () => {
   );  
 
   return (
-    <div className="bg-neutral-800 lg:text-white bg-opacity-80 flex place-content-center py-1">
-      <div className="navbar w-[90%] mx-auto ">
+    <div className=" bg-neutral-800 lg:text-white bg-opacity-80 flex place-content-center py-1 fixed top-0 left-0 w-full z-50">
+      <div className="navbar w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

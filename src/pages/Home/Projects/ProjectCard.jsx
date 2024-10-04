@@ -15,7 +15,7 @@ const ProjectCard = ({item}) => {
             </div>
             </div>
             <div className="card-body">
-              <h2 className="card-title">{title}</h2>
+              <h2 className="card-title font-mono text-2xl">{title}</h2>
               <p className='text-justify text-sm'>{description}</p>
               <hr />
               <div className='flex justify-between items-center mt-4'>
@@ -42,14 +42,14 @@ const ProjectCard = ({item}) => {
           {/* Open the modal using ID.showModal() method */}
           <dialog id={_id} className="modal modal-bottom sm:modal-middle">
             <form method="dialog" className="modal-box">
-              <h3 className="font-bold text-lg">Project Name: {title}</h3>
+              <h3 className="font-bold text-2xl text-blue-400 font-mono">Project Name: {title}</h3>
               <p className="py-4 text-justify">{description}</p>
               {/* <p className="py-4 font-semibold">Technology: </p>
                 <li>{technology}</li> */}
-              <p className="py-4 font-semibold">features: </p>
+              <p className="py-4 font-semibold text-2xl text-blue-400 font-mono">features: </p>
               <div>
                 {featuresArray.map((feature, index) => (
-                  <li key={index}>{feature}.</li>
+                  <li key={index} className='pb-2'>{feature}.</li>
                 ))}
               </div>
               <div className="modal-action">
