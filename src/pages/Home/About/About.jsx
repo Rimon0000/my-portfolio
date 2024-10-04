@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaCloudDownloadAlt, FaUserAlt, FaUserGraduate } from 'react-icons/fa';
-import about from "../../../assets/rimon-about.jpeg"
 
 const About = () => {
     return (
@@ -10,7 +9,7 @@ const About = () => {
             <div className='lg:w-1/2 md:w-1/2' data-aos="fade-right" data-aos-duration="2000">
             <div className="avatar">
               <div className=" rounded-xl  px-5 mb-5">
-                <img className='rounded-lg max-h-[500px]' src={about} />
+                <img className='rounded-lg max-h-[500px]' src="https://i.ibb.co.com/3rdxJ3Y/rimon-about.webp" />
               </div>
             </div>
             </div>

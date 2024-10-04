@@ -1,6 +1,6 @@
 .progress {
     height: 100%;
-    animation: progress-animation 8s ease-in-out forwards;
+    animation: progress-animation 10s ease-in-out forwards;
   }
   
   @keyframes progress-animation {
