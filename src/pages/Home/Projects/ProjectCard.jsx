@@ -8,13 +8,17 @@ const ProjectCard = ({item}) => {
 
     return (
         <div className=''>
-          <div className="card bg-base-100 shadow-xl  border hover:border-blue-500 transition-all duration-300" data-aos="zoom-in-left" data-aos-duration="2000">
-            <figure><img className='h-[200px]' src={image} alt="Image" /></figure>
+          <div className="card bg-base-100 lg:h-[539px] md:lg:h-[539px] sm:h-full h-full shadow-xl  border hover:border-blue-500 transition-all duration-300" data-aos="zoom-in-left" data-aos-duration="2000">
+            <div className="relative max-w-full h-64 overflow-hidden">
+            <div className='h-max w-full transition-transform duration-[8000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)]'>
+              <img className='w-full object-cover object-top p-2 rounded-xl' src={image} alt="Image" />
+            </div>
+            </div>
             <div className="card-body">
               <h2 className="card-title">{title}</h2>
-              <p className='text-justify'>{description}</p>
+              <p className='text-justify text-sm'>{description}</p>
               <hr />
-              <div className='flex justify-between mt-4'>
+              <div className='flex justify-between items-center mt-4'>
                 <div className='grid grid-cols-3 gap-5 text-3xl'>
                     <a className="tooltip tooltip-bottom" data-tip="Live Site" href={live} target="_blank">
                         <button className='border border-primary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-primary hover:text-white'>
